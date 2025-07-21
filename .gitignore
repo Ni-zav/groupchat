@@ -1,4 +1,31 @@
-# Webdev
-/node_modules
-/dist
+# dependencies
+node_modules/
+bun.lockb
+
+# build outputs
+dist/
+out/
+build/
+*.js
+*.js.map
+
+# environment
 .env
+.env.local
+
+# system files
+.DS_Store
+Thumbs.db
+
+# bun runtime definitions (if generated)
+bun-types.d.ts
+
+# optional IDE configs
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+bun-debug.log*
