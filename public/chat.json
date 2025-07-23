@@ -1,0 +1,389 @@
+{
+  "results": [
+    {
+      "room": {
+        "name": "Head Chat - Tim Penjualan",
+        "id": 10000,
+        "image_url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 }
+        ]
+      },
+      "comments": [
+        { "id": 1, "type": "text", "message": "Selamat pagi semua, bagaimana progres penjualan minggu ini?", "sender": "admin@company.com", "timestamp": "2025-07-20T08:00:00Z" },
+        { "id": 2, "type": "text", "message": "Pagi Bu Sarah, penjualan produk A meningkat 20% minggu ini.", "sender": "agent1@company.com", "timestamp": "2025-07-20T08:01:00Z" },
+        { "id": 3, "type": "text", "message": "Saya sudah follow up beberapa customer baru, ada yang tertarik tapi masih menunggu konfirmasi.", "sender": "agent2@company.com", "timestamp": "2025-07-20T08:02:00Z" },
+        { "id": 4, "type": "text", "message": "Saya kirimkan laporan mingguan di bawah ini.", "sender": "agent3@company.com", "timestamp": "2025-07-20T08:03:00Z" },
+        { "id": 5, "type": "pdf", "message": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "sender": "agent3@company.com", "timestamp": "2025-07-20T08:03:30Z" },
+        { "id": 6, "type": "text", "message": "Terima kasih semua, tetap semangat!", "sender": "admin@company.com", "timestamp": "2025-07-20T08:05:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 1",
+        "id": 11001,
+        "image_url": "https://randomuser.me/api/portraits/men/1.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer1@company.com", "name": "Andi Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 10, "type": "text", "message": "Halo Andi, selamat datang! Ada produk yang ingin ditanyakan?", "sender": "agent1@company.com", "timestamp": "2025-07-20T09:00:00Z" },
+        { "id": 11, "type": "text", "message": "Halo Pak, saya tertarik dengan produk B. Ada diskon?", "sender": "customer1@company.com", "timestamp": "2025-07-20T09:01:00Z" },
+        { "id": 12, "type": "text", "message": "Untuk bulan ini ada diskon 10%.", "sender": "agent1@company.com", "timestamp": "2025-07-20T09:02:00Z" },
+        { "id": 13, "type": "image", "message": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400", "sender": "agent1@company.com", "timestamp": "2025-07-20T09:03:00Z" },
+        { "id": 14, "type": "text", "message": "Wah, menarik! Saya pesan satu ya.", "sender": "customer1@company.com", "timestamp": "2025-07-20T09:04:00Z" },
+        { "id": 15, "type": "text", "message": "Pesanan sudah diproses, terima kasih!", "sender": "agent1@company.com", "timestamp": "2025-07-20T09:05:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 2",
+        "id": 11002,
+        "image_url": "https://randomuser.me/api/portraits/women/2.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "customer2@company.com", "name": "Maya Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 20, "type": "text", "message": "Selamat pagi Maya, ada yang bisa kami bantu?", "sender": "agent2@company.com", "timestamp": "2025-07-20T10:00:00Z" },
+        { "id": 21, "type": "text", "message": "Saya masih lihat-lihat dulu ya, Mbak.", "sender": "customer2@company.com", "timestamp": "2025-07-20T10:01:00Z" },
+        { "id": 22, "type": "text", "message": "Baik, silakan jika ada pertanyaan langsung chat saja.", "sender": "agent2@company.com", "timestamp": "2025-07-20T10:02:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 3",
+        "id": 11003,
+        "image_url": "https://randomuser.me/api/portraits/men/3.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 },
+          { "id": "customer3@company.com", "name": "Dedi Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 30, "type": "text", "message": "Halo Dedi, ada produk yang ingin dicoba?", "sender": "agent3@company.com", "timestamp": "2025-07-20T11:00:00Z" },
+        { "id": 31, "type": "text", "message": "Saya tertarik, tapi masih ragu. Ada testimoni?", "sender": "customer3@company.com", "timestamp": "2025-07-20T11:01:00Z" },
+        { "id": 32, "type": "image", "message": "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=600&h=400", "sender": "agent3@company.com", "timestamp": "2025-07-20T11:02:00Z" },
+        { "id": 33, "type": "text", "message": "Ini beberapa testimoni dari pelanggan lain.", "sender": "agent3@company.com", "timestamp": "2025-07-20T11:03:00Z" },
+        { "id": 34, "type": "text", "message": "Terima kasih, saya pikir-pikir dulu.", "sender": "customer3@company.com", "timestamp": "2025-07-20T11:04:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 4",
+        "id": 11004,
+        "image_url": "https://randomuser.me/api/portraits/women/4.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer4@company.com", "name": "Lina Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 40, "type": "text", "message": "Selamat siang Lina, ada yang bisa kami bantu?", "sender": "agent1@company.com", "timestamp": "2025-07-20T12:00:00Z" },
+        { "id": 41, "type": "text", "message": "Saya mau tanya soal produk C.", "sender": "customer4@company.com", "timestamp": "2025-07-20T12:01:00Z" },
+        { "id": 42, "type": "text", "message": "Tentu, silakan.", "sender": "agent1@company.com", "timestamp": "2025-07-20T12:02:00Z" },
+        { "id": 43, "type": "text", "message": "......", "sender": "agent1@company.com", "timestamp": "2025-07-20T12:10:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 5",
+        "id": 11005,
+        "image_url": "https://randomuser.me/api/portraits/men/5.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "customer5@company.com", "name": "Rama Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 50, "type": "text", "message": "Halo Rama, ada yang bisa kami bantu?", "sender": "agent2@company.com", "timestamp": "2025-07-20T13:00:00Z" },
+        { "id": 51, "type": "text", "message": "Saya mau pesan produk D, tapi saya batalkan dulu ya.", "sender": "customer5@company.com", "timestamp": "2025-07-20T13:01:00Z" },
+        { "id": 52, "type": "text", "message": "Baik, tidak apa-apa. Jika berubah pikiran silakan hubungi kami lagi.", "sender": "agent2@company.com", "timestamp": "2025-07-20T13:02:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 6",
+        "id": 11006,
+        "image_url": "https://randomuser.me/api/portraits/women/6.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 },
+          { "id": "customer6@company.com", "name": "Nina Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 60, "type": "text", "message": "Halo Nina, terima kasih sudah menghubungi kami.", "sender": "agent3@company.com", "timestamp": "2025-07-20T14:00:00Z" },
+        { "id": 61, "type": "text", "message": "Saya mau beli produk E, bisa dikirim hari ini?", "sender": "customer6@company.com", "timestamp": "2025-07-20T14:01:00Z" },
+        { "id": 62, "type": "text", "message": "Bisa, berikut invoice-nya.", "sender": "agent3@company.com", "timestamp": "2025-07-20T14:02:00Z" },
+        { "id": 63, "type": "pdf", "message": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "sender": "agent3@company.com", "timestamp": "2025-07-20T14:03:00Z" },
+        { "id": 64, "type": "text", "message": "Sudah saya transfer, terima kasih!", "sender": "customer6@company.com", "timestamp": "2025-07-20T14:04:00Z" },
+        { "id": 65, "type": "text", "message": "Pesanan akan segera dikirim. Terima kasih atas kepercayaannya.", "sender": "agent3@company.com", "timestamp": "2025-07-20T14:05:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 7",
+        "id": 11007,
+        "image_url": "https://randomuser.me/api/portraits/men/7.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer7@company.com", "name": "Fajar Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 70, "type": "text", "message": "Halo Fajar, ada yang bisa kami bantu hari ini?", "sender": "agent1@company.com", "timestamp": "2025-07-20T15:00:00Z" },
+        { "id": 71, "type": "text", "message": "Saya mau tanya soal produk F, apa bedanya dengan produk E?", "sender": "customer7@company.com", "timestamp": "2025-07-20T15:01:00Z" },
+        { "id": 72, "type": "text", "message": "Produk F lebih hemat energi dan garansi lebih lama.", "sender": "agent1@company.com", "timestamp": "2025-07-20T15:02:00Z" },
+        { "id": 73, "type": "text", "message": "Kalau saya beli dua, dapat diskon?", "sender": "customer7@company.com", "timestamp": "2025-07-20T15:03:00Z" },
+        { "id": 74, "type": "text", "message": "Tentu, ada diskon 15% untuk pembelian dua unit.", "sender": "agent1@company.com", "timestamp": "2025-07-20T15:04:00Z" },
+        { "id": 75, "type": "image", "message": "https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=600&h=400", "sender": "agent1@company.com", "timestamp": "2025-07-20T15:05:00Z" },
+        { "id": 76, "type": "text", "message": "Baik, saya pesan dua ya.", "sender": "customer7@company.com", "timestamp": "2025-07-20T15:06:00Z" },
+        { "id": 77, "type": "text", "message": "Pesanan sudah diproses, terima kasih!", "sender": "agent1@company.com", "timestamp": "2025-07-20T15:07:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 8",
+        "id": 11008,
+        "image_url": "https://randomuser.me/api/portraits/women/8.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "customer8@company.com", "name": "Putri Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 80, "type": "text", "message": "Selamat sore Putri, ada yang bisa kami bantu?", "sender": "agent2@company.com", "timestamp": "2025-07-20T16:00:00Z" },
+        { "id": 81, "type": "text", "message": "Saya bingung, produk G ini bisa untuk outdoor?", "sender": "customer8@company.com", "timestamp": "2025-07-20T16:01:00Z" },
+        { "id": 82, "type": "text", "message": "Bisa, produk G tahan air dan cocok untuk outdoor.", "sender": "agent2@company.com", "timestamp": "2025-07-20T16:02:00Z" },
+        { "id": 83, "type": "text", "message": "Kalau misal rusak, garansinya gimana?", "sender": "customer8@company.com", "timestamp": "2025-07-20T16:03:00Z" },
+        { "id": 84, "type": "text", "message": "Garansi 1 tahun, bisa klaim langsung ke kami.", "sender": "agent2@company.com", "timestamp": "2025-07-20T16:04:00Z" },
+        { "id": 85, "type": "text", "message": "Oke, saya pikir-pikir dulu ya.", "sender": "customer8@company.com", "timestamp": "2025-07-20T16:05:00Z" },
+        { "id": 86, "type": "text", "message": "Siap, silakan jika ada pertanyaan lagi.", "sender": "agent2@company.com", "timestamp": "2025-07-20T16:06:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 9",
+        "id": 11009,
+        "image_url": "https://randomuser.me/api/portraits/men/9.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 },
+          { "id": "customer9@company.com", "name": "Bayu Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 90, "type": "text", "message": "Halo Bayu, selamat datang di layanan kami.", "sender": "agent3@company.com", "timestamp": "2025-07-20T17:00:00Z" },
+        { "id": 91, "type": "text", "message": "Saya mau tanya, produk H ini bisa cicilan?", "sender": "customer9@company.com", "timestamp": "2025-07-20T17:01:00Z" },
+        { "id": 92, "type": "text", "message": "Bisa, minimal DP 20%.", "sender": "agent3@company.com", "timestamp": "2025-07-20T17:02:00Z" },
+        { "id": 93, "type": "text", "message": "Oke, saya transfer DP dulu.", "sender": "customer9@company.com", "timestamp": "2025-07-20T17:03:00Z" },
+        { "id": 94, "type": "pdf", "message": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "sender": "agent3@company.com", "timestamp": "2025-07-20T17:04:00Z" },
+        { "id": 95, "type": "text", "message": "Sudah saya terima, terima kasih Bayu!", "sender": "agent3@company.com", "timestamp": "2025-07-20T17:05:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 10",
+        "id": 11010,
+        "image_url": "https://randomuser.me/api/portraits/men/10.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer10@company.com", "name": "Roni Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 100, "type": "text", "message": "Selamat pagi Roni, ada yang bisa kami bantu?", "sender": "agent1@company.com", "timestamp": "2025-07-20T18:00:00Z" },
+        { "id": 101, "type": "text", "message": "Saya mau tanya, produk I itu ready stock?", "sender": "customer10@company.com", "timestamp": "2025-07-20T18:01:00Z" },
+        { "id": 102, "type": "text", "message": "Ready, Pak. Mau pesan berapa?", "sender": "agent1@company.com", "timestamp": "2025-07-20T18:02:00Z" },
+        { "id": 103, "type": "text", "message": "Satu saja dulu, nanti kalau cocok saya tambah.", "sender": "customer10@company.com", "timestamp": "2025-07-20T18:03:00Z" },
+        { "id": 104, "type": "text", "message": "Baik, pesanan diproses ya.", "sender": "agent1@company.com", "timestamp": "2025-07-20T18:04:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 11",
+        "id": 11011,
+        "image_url": "https://randomuser.me/api/portraits/women/11.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "customer11@company.com", "name": "Dewi Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 110, "type": "text", "message": "Halo Dewi, ada yang bisa kami bantu?", "sender": "agent2@company.com", "timestamp": "2025-07-20T19:00:00Z" },
+        { "id": 111, "type": "text", "message": "Saya mau pesan produk J, tapi masih ragu.", "sender": "customer11@company.com", "timestamp": "2025-07-20T19:01:00Z" },
+        { "id": 112, "type": "text", "message": "Boleh tahu keraguannya di bagian mana, Bu?", "sender": "agent2@company.com", "timestamp": "2025-07-20T19:02:00Z" },
+        { "id": 113, "type": "text", "message": "Takut tidak cocok saja, soalnya belum pernah coba.", "sender": "customer11@company.com", "timestamp": "2025-07-20T19:03:00Z" },
+        { "id": 114, "type": "text", "message": "Bisa kami kirimkan sample, Bu.", "sender": "agent2@company.com", "timestamp": "2025-07-20T19:04:00Z" },
+        { "id": 115, "type": "image", "message": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400", "sender": "agent2@company.com", "timestamp": "2025-07-20T19:05:00Z" },
+        { "id": 116, "type": "text", "message": "Oke, saya tunggu ya.", "sender": "customer11@company.com", "timestamp": "2025-07-20T19:06:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 12",
+        "id": 11012,
+        "image_url": "https://randomuser.me/api/portraits/men/12.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 },
+          { "id": "customer12@company.com", "name": "Yoga Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 120, "type": "text", "message": "Selamat malam Yoga, ada yang bisa kami bantu?", "sender": "agent3@company.com", "timestamp": "2025-07-20T20:00:00Z" },
+        { "id": 121, "type": "text", "message": "Saya mau tanya harga produk K.", "sender": "customer12@company.com", "timestamp": "2025-07-20T20:01:00Z" },
+        { "id": 122, "type": "text", "message": "Harga produk K Rp500.000.", "sender": "agent3@company.com", "timestamp": "2025-07-20T20:02:00Z" },
+        { "id": 123, "type": "text", "message": "Oke, saya pikir-pikir dulu ya.", "sender": "customer12@company.com", "timestamp": "2025-07-20T20:03:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 13",
+        "id": 11013,
+        "image_url": "https://randomuser.me/api/portraits/women/13.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer13@company.com", "name": "Rina Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 130, "type": "text", "message": "Halo Rina, selamat datang di toko kami.", "sender": "agent1@company.com", "timestamp": "2025-07-20T21:00:00Z" },
+        { "id": 131, "type": "text", "message": "Saya mau pesan produk L, bisa dikirim ke Bandung?", "sender": "customer13@company.com", "timestamp": "2025-07-20T21:01:00Z" },
+        { "id": 132, "type": "text", "message": "Bisa, pengiriman ke Bandung estimasi 2 hari kerja.", "sender": "agent1@company.com", "timestamp": "2025-07-20T21:02:00Z" },
+        { "id": 133, "type": "text", "message": "Oke, saya transfer sekarang.", "sender": "customer13@company.com", "timestamp": "2025-07-20T21:03:00Z" },
+        { "id": 134, "type": "pdf", "message": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "sender": "agent1@company.com", "timestamp": "2025-07-20T21:04:00Z" },
+        { "id": 135, "type": "text", "message": "Pembayaran diterima, terima kasih Rina!", "sender": "agent1@company.com", "timestamp": "2025-07-20T21:05:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 14",
+        "id": 11014,
+        "image_url": "https://randomuser.me/api/portraits/men/14.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "customer14@company.com", "name": "Tono Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 140, "type": "text", "message": "Halo Tono, ada yang bisa kami bantu?", "sender": "agent2@company.com", "timestamp": "2025-07-20T22:00:00Z" },
+        { "id": 141, "type": "text", "message": "Saya mau pesan produk M, tapi bingung cara bayarnya.", "sender": "customer14@company.com", "timestamp": "2025-07-20T22:01:00Z" },
+        { "id": 142, "type": "text", "message": "Bisa transfer bank atau e-wallet, Pak.", "sender": "agent2@company.com", "timestamp": "2025-07-20T22:02:00Z" },
+        { "id": 143, "type": "text", "message": "Kalau lewat OVO bisa?", "sender": "customer14@company.com", "timestamp": "2025-07-20T22:03:00Z" },
+        { "id": 144, "type": "text", "message": "Bisa, nanti saya kirimkan nomor OVO-nya.", "sender": "agent2@company.com", "timestamp": "2025-07-20T22:04:00Z" },
+        { "id": 145, "type": "text", "message": "Oke, saya tunggu.", "sender": "customer14@company.com", "timestamp": "2025-07-20T22:05:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 15",
+        "id": 11015,
+        "image_url": "https://randomuser.me/api/portraits/women/15.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 },
+          { "id": "customer15@company.com", "name": "Sari Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 150, "type": "text", "message": "Selamat malam Sari, ada yang bisa kami bantu?", "sender": "agent3@company.com", "timestamp": "2025-07-20T23:00:00Z" },
+        { "id": 151, "type": "text", "message": "Saya mau pesan produk N, tapi saya cancel ya.", "sender": "customer15@company.com", "timestamp": "2025-07-20T23:01:00Z" },
+        { "id": 152, "type": "text", "message": "Baik, tidak apa-apa. Jika berubah pikiran silakan hubungi kami lagi.", "sender": "agent3@company.com", "timestamp": "2025-07-20T23:02:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 16",
+        "id": 11016,
+        "image_url": "https://randomuser.me/api/portraits/men/16.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer16@company.com", "name": "Dian Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 160, "type": "text", "message": "Halo Dian, ada yang bisa kami bantu?", "sender": "agent1@company.com", "timestamp": "2025-07-21T08:00:00Z" },
+        { "id": 161, "type": "text", "message": "Saya mau tanya, produk O itu garansinya berapa lama?", "sender": "customer16@company.com", "timestamp": "2025-07-21T08:01:00Z" },
+        { "id": 162, "type": "text", "message": "Garansi 2 tahun, Pak.", "sender": "agent1@company.com", "timestamp": "2025-07-21T08:02:00Z" },
+        { "id": 163, "type": "text", "message": "Oke, saya pesan satu.", "sender": "customer16@company.com", "timestamp": "2025-07-21T08:03:00Z" },
+        { "id": 164, "type": "text", "message": "Pesanan diproses, terima kasih.", "sender": "agent1@company.com", "timestamp": "2025-07-21T08:04:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 17",
+        "id": 11017,
+        "image_url": "https://randomuser.me/api/portraits/women/17.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent2@company.com", "name": "Siti Agen", "role": 1 },
+          { "id": "customer17@company.com", "name": "Lusi Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 170, "type": "text", "message": "Selamat pagi Lusi, ada yang bisa kami bantu?", "sender": "agent2@company.com", "timestamp": "2025-07-21T09:00:00Z" },
+        { "id": 171, "type": "text", "message": "Saya mau pesan produk P, tapi saya bingung cara pakainya.", "sender": "customer17@company.com", "timestamp": "2025-07-21T09:01:00Z" },
+        { "id": 172, "type": "text", "message": "Nanti kami kirimkan video tutorialnya, Bu.", "sender": "agent2@company.com", "timestamp": "2025-07-21T09:02:00Z" },
+        { "id": 173, "type": "video", "message": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "sender": "agent2@company.com", "timestamp": "2025-07-21T09:03:00Z" },
+        { "id": 174, "type": "text", "message": "Terima kasih, saya coba dulu ya.", "sender": "customer17@company.com", "timestamp": "2025-07-21T09:04:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 18",
+        "id": 11018,
+        "image_url": "https://randomuser.me/api/portraits/men/18.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent3@company.com", "name": "Rizky Agen", "role": 1 },
+          { "id": "customer18@company.com", "name": "Fikri Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 180, "type": "text", "message": "Halo Fikri, ada yang bisa kami bantu?", "sender": "agent3@company.com", "timestamp": "2025-07-21T10:00:00Z" },
+        { "id": 181, "type": "text", "message": "Saya mau pesan produk Q, tapi saya cancel ya.", "sender": "customer18@company.com", "timestamp": "2025-07-21T10:01:00Z" },
+        { "id": 182, "type": "text", "message": "Baik, tidak apa-apa. Jika berubah pikiran silakan hubungi kami lagi.", "sender": "agent3@company.com", "timestamp": "2025-07-21T10:02:00Z" }
+      ]
+    },
+    {
+      "room": {
+        "name": "Chat dengan Customer 19",
+        "id": 11019,
+        "image_url": "https://randomuser.me/api/portraits/women/19.jpg",
+        "participant": [
+          { "id": "admin@company.com", "name": "Sarah Admin", "role": 0 },
+          { "id": "agent1@company.com", "name": "Budi Agen", "role": 1 },
+          { "id": "customer19@company.com", "name": "Mega Pelanggan", "role": 2 }
+        ]
+      },
+      "comments": [
+        { "id": 190, "type": "text", "message": "Selamat siang Mega, ada yang bisa kami bantu?", "sender": "agent1@company.com", "timestamp": "2025-07-21T11:00:00Z" },
+        { "id": 191, "type": "text", "message": "Saya mau pesan produk R, bisa dikirim ke Surabaya?", "sender": "customer19@company.com", "timestamp": "2025-07-21T11:01:00Z" },
+        { "id": 192, "type": "text", "message": "Bisa, pengiriman ke Surabaya estimasi 3 hari kerja.", "sender": "agent1@company.com", "timestamp": "2025-07-21T11:02:00Z" },
+        { "id": 193, "type": "text", "message": "Oke, saya transfer sekarang.", "sender": "customer19@company.com", "timestamp": "2025-07-21T11:03:00Z" },
+        { "id": 194, "type": "pdf", "message": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", "sender": "agent1@company.com", "timestamp": "2025-07-21T11:04:00Z" },
+        { "id": 195, "type": "text", "message": "Pembayaran diterima, terima kasih Mega!", "sender": "agent1@company.com", "timestamp": "2025-07-21T11:05:00Z" }
+      ]
+    }
+  ]
+}
