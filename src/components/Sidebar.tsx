@@ -1,6 +1,6 @@
 import React from 'react';
 import { SidebarProps, ROLE_NAMES } from '../types/chat';
-import { MessageCircle, Users, X, Hash } from 'lucide-react';
+import { MessageCircle, Users, X, Hash, Github } from 'lucide-react';
 
 const Sidebar: React.FC<SidebarProps> = ({ 
   rooms, 
@@ -151,9 +151,20 @@ const Sidebar: React.FC<SidebarProps> = ({
         </div>
 
         {/* Footer */}
-        <div className="h-20 flex items-center justify-center border-t border-gray-700 bg-gray-900 px-4">
-          <div className="text-xs text-gray-400 text-center w-full">
+        <div className="h-20 flex items-center justify-between border-t border-gray-700 bg-gray-900 px-4">
+          <div className="text-xs text-gray-400 w-1/2 truncate">
             {rooms.length} room{rooms.length !== 1 ? 's' : ''} available
+          </div>
+          <div className="w-1/2 flex justify-end">
+            <a
+              href="https://github.com/Ni-zav/groupchat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center p-2 rounded hover:bg-gray-800 transition-colors duration-150"
+              aria-label="View source on GitHub"
+            >
+              <Github size={20} className="text-gray-400 hover:text-white" />
+            </a>
           </div>
         </div>
       </div>
