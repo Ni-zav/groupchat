@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { Participant } from '../types/chat';
 
@@ -8,9 +8,23 @@ interface MemberDetailsProps {
 }
 
 const MemberDetails: React.FC<MemberDetailsProps> = ({ participant, onClose }) => {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        onClose();
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [onClose]);
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60">
-      <div className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg p-6 w-full max-w-md relative">
+      <div ref={modalRef} className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg p-6 w-full max-w-md relative">
         <button
           className="absolute top-2 right-2 text-gray-400 hover:text-white"
           onClick={onClose}

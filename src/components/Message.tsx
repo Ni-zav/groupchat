@@ -106,15 +106,31 @@ const Message: React.FC<MessageProps> = ({
                 <span className="text-sm">Failed to load video</span>
               </div>
             ) : (
-              <video
-                src={message.message}
-                controls
-                className="max-w-full h-auto max-h-64 w-auto bg-black"
-                onError={() => setVideoError(true)}
-                preload="metadata"
-              >
-                Your browser does not support the video tag.
-              </video>
+              <>
+                <video
+                  src={message.message}
+                  controls
+                  className="max-w-full h-auto max-h-64 w-auto bg-black"
+                  onError={() => setVideoError(true)}
+                  preload="metadata"
+                >
+                  Your browser does not support the video tag.
+                </video>
+                {/* Download button for video */}
+                <div className="flex justify-end mt-1">
+                  <a
+                    href={message.message}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-blue-400 hover:text-blue-300 transition-colors duration-150"
+                    aria-label="Download Video"
+                  >
+                    <Download size={18} />
+                    <span className="text-sm">Download</span>
+                  </a>
+                </div>
+              </>
             )}
           </div>
         );
