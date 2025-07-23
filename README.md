@@ -2,8 +2,93 @@
 
 ## Introduction
 
-
 A modern, monochrome-themed group chat application built with React, TypeScript, Vite, and Tailwind CSS. This project demonstrates a clean, accessible, and highly customizable chat UI, suitable for both desktop and mobile devices.
+
+## System Overview
+
+This project is a **group chat system** that supports sending messages, including text, images, videos, and PDF files. It’s designed to be scalable and modular using a service-based architecture. Below is a breakdown of how it works:
+
+### System Architecture
+
+![System Diagram](./system-design.png)
+
+* **Clients**: Users interact with the app (mobile or web) and send/receive messages.
+* **API Gateway**: The central entry point for all communication. It forwards requests to the appropriate services.
+* **Auth Service**: Handles user login, access tokens, and checking roles (admin, agent, customer).
+* **Chat Service**: Core logic for sending and receiving messages. It creates chat rooms, handles participants, and formats messages.
+* **Storage Service**: Manages uploaded files (images, videos, PDFs), returns URLs to be saved with messages.
+* **Message Queue**: Buffers incoming messages before saving, so the system can scale and process things asynchronously.
+* **Databases**:
+
+  * `User DB`: Stores account info.
+  * `Chat DB`: Stores rooms, participants, and messages.
+  * `Media DB`: Stores uploaded media files.
+
+---
+
+## Database Schema
+
+![Database ERD](./erd.png)
+
+Here’s a breakdown of the database design:
+
+### 🧍‍♂️ `users`
+
+Stores all registered users.
+
+```sql
+id         -- unique user ID (email or UUID)
+name       -- display name
+email      -- user email
+role       -- 0 = admin, 1 = agent, 2 = customer
+```
+
+### 💬 `rooms`
+
+Each chat room (group or private chat).
+
+```sql
+id          -- room ID
+name        -- name of the room
+image_url   -- avatar image for the room
+is_group    -- boolean: true if group, false if 1-on-1
+```
+
+### 👥 `room_participants`
+
+Links users to rooms.
+
+```sql
+id          -- record ID
+room_id     -- which room
+user_id     -- which user
+```
+
+### ✉️ `messages`
+
+Every message sent in a room.
+
+```sql
+id          -- message ID
+room_id     -- where it was sent
+sender_id   -- who sent it
+type        -- text, image, video, pdf
+content     -- message text or file URL
+created_at  -- timestamp
+```
+
+### 📎 `attachments`
+
+Used only when message type is not text.
+
+```sql
+id          -- attachment ID
+message_id  -- linked to the message
+file_url    -- actual file location
+file_type   -- image/pdf/video
+file_name   -- original filename
+file_size   -- in bytes
+```
 
 ## Features
 
@@ -16,6 +101,18 @@ A modern, monochrome-themed group chat application built with React, TypeScript,
 - **Dark/monochrome theme** with Tailwind and CSS variables
 - **Accessible keyboard navigation** and focus styles
 - **Animated transitions** for UI elements
+
+
+## User Interface
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="./ui.png" alt="Desktop UI" width="320" /><br /><b>Desktop UI</b></td>
+      <td align="center"><img src="./mobile-ui.png" alt="Mobile UI" width="180" /><br /><b>Mobile UI</b></td>
+    </tr>
+  </table>
+</div>
 
 ## Getting Started
 
