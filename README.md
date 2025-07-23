@@ -9,8 +9,8 @@ A modern, monochrome-themed group chat application built with React, TypeScript,
 
 This project uses a sample chat data file at [`public/chat.json`](./public/chat.json) for local development and UI prototyping.
 
-- **Local JSON:** [`public/chat.json`](./public/chat.json)
-- **Extended JSON Example:** [chat_response.json (gist)](https://gist.githubusercontent.com/asharijuang/23745f3132fa30e666db68d2bf574e4a/raw/5d556dbb9c2aea9fdf3e1ec96e45f62a88cea7b6/chat_response.json)
+- **Extended JSON:** [`public/chat.json`](./public/chat.json)
+- **JSON Example:** [chat_response.json (gist)](https://gist.githubusercontent.com/asharijuang/23745f3132fa30e666db68d2bf574e4a/raw/5d556dbb9c2aea9fdf3e1ec96e45f62a88cea7b6/chat_response.json)
 
 ### Comparison
 
@@ -18,10 +18,9 @@ This project uses a sample chat data file at [`public/chat.json`](./public/chat.
 |------------------------|-----------------------------|------------------------------|
 | Rooms                  | Yes                         | Yes                          |
 | Participants           | Yes                         | Yes                          |
-| Message Types          | text, image, video, pdf     | text, image, video, pdf, ... |
-| Attachments            | Inline (in message object)  | May be separate/linked       |
+| Message Types          | text, image, video, pdf     | text, image, video, pdf,     |
 | Timestamps             | ISO 8601                    | ISO 8601                     |
-| Realistic Data Volume  | Small (demo)                | Larger, more realistic       |
+| Realistic Data Volume  | Small (demo)                | Larger                       |
 | API Structure          | Flat, simple                | Nested, closer to real API   |
 | Usage                  | UI demo, local dev          | Backend/API integration      |
 
