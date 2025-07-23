@@ -1,64 +1,55 @@
+# Group Chat Application
 
-# Bun React Group Chat
+## Introduction
+
+
+A modern, monochrome-themed group chat application built with React, TypeScript, Vite, and Tailwind CSS. This project demonstrates a clean, accessible, and highly customizable chat UI, suitable for both desktop and mobile devices.
 
 ## Features
 
-- **Tech Stack:** Bun, React 19, Tailwind CSS, ShadCN UI conventions
-- **Flat, monochrome UI:** Black/gray, no rounded corners, minimalistic
-- **Responsive layout:** Sidebar (rooms) and main chat, mobile-friendly
-- **Sidebar:** List of chat rooms, highlights selected, click to switch
-- **ChatRoom:** Shows room name, image, participants with roles (admin, agent, customer)
-- **MessageList:** Scrollable, auto-scrolls to latest, resolves sender info
-- **Message:** Renders text, image, video, and PDF inline
-  - Text: black-on-gray
-  - Image: max-width, flat
-  - Video: controls, flat
-  - PDF: link to view/download
-  - Alignment: left for customer, right for agent/admin
-- **Data:** Loads static chat data from `src/chat/chat.json`
-- **Assets:** Logo in `src/logo.svg`
+- **Group chat rooms** with participant roles (Admin, Agent, Customer)
+- **Responsive sidebar** for room navigation, collapses on mobile
+- **Message bubbles** for outgoing/incoming messages
+- **File upload support** (image, video, PDF)
+- **Role-based color coding** for participants
+- **Custom UI components** (buttons, popovers, tooltips, toasts, etc.)
+- **Dark/monochrome theme** with Tailwind and CSS variables
+- **Accessible keyboard navigation** and focus styles
+- **Animated transitions** for UI elements
 
 ## Getting Started
 
-Install dependencies:
-```bash
-bun install
-```
+1. **Install dependencies:**
+   ```bash
+   bun install
+   # or
+   npm install
+   ```
 
-Start development server:
-```bash
-bun dev
-```
+2. **Start the development server:**
+   ```bash
+   bun run dev
+   # or
+   npm run dev
+   ```
 
-Run for production:
-```bash
-bun start
-```
+3. **Open** [http://localhost:5173](http://localhost:5173) in your browser.
 
-## File Structure
+## Project Structure
 
-- `src/index.tsx` - Bun server entry, serves static and SPA routes
-- `src/index.html` - Main HTML file
-- `src/frontend.tsx` - React app entry point
-- `src/App.tsx` - Main app component
-- `src/components/Sidebar.tsx` - Room list
-- `src/components/ChatRoom.tsx` - Room info and participants
-- `src/components/MessageList.tsx` - Renders all messages
-- `src/components/Message.tsx` - Renders a single message
-- `src/chat/chat.json` - Static chat data
-- `src/logo.svg` - Logo asset
+- `src/components/` – Reusable UI and chat components
+- `src/pages/` – Main app pages (e.g., `ChatApp.tsx`)
+- `src/types/` – TypeScript interfaces for chat data
+- `public/` – Static assets and mock chat data
 
-## What To Do Next
+## What to Do Next
 
-To create a full front-end group chat endpoint:
-
-1. **Backend API:** Implement REST or WebSocket endpoints for real-time chat, room management, and message CRUD.
-2. **Frontend Integration:** Replace static fetch with API calls, handle loading/sending messages, room switching, and attachments.
-3. **Authentication:** Add user login, role assignment, and session management.
-4. **File Uploads:** Support image/video/pdf uploads and previews.
-5. **Notifications:** Add toast or banner notifications for new messages/events.
-6. **Cloud Deployment:** Bundle and deploy to Cloudflare Pages or Vercel.
-7. **Testing:** Add unit and integration tests for components and API.
+- **Connect to a backend:** Integrate real-time messaging (e.g., with WebSocket, Firebase, or your own API)
+- **Authentication:** Add user login and role management
+- **Persistence:** Store chat history and user preferences
+- **Notifications:** Implement push or in-app notifications
+- **Testing:** Add unit and integration tests for components and logic
+- **Accessibility:** Further improve ARIA roles and keyboard support
+- **Deployment:** Prepare for production and deploy (e.g., Vercel, Netlify)
 
 ---
-This project was created using `bun init` in bun v1.2.14. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
