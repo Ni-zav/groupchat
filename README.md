@@ -4,6 +4,31 @@
 
 A modern, monochrome-themed group chat application built with React, TypeScript, Vite, and Tailwind CSS. This project demonstrates a clean, accessible, and highly customizable chat UI, suitable for both desktop and mobile devices.
 
+
+## Chat Data Format
+
+This project uses a sample chat data file at [`public/chat.json`](./public/chat.json) for local development and UI prototyping.
+
+- **Local JSON:** [`public/chat.json`](./public/chat.json)
+- **Extended JSON Example:** [chat_response.json (gist)](https://gist.githubusercontent.com/asharijuang/23745f3132fa30e666db68d2bf574e4a/raw/5d556dbb9c2aea9fdf3e1ec96e45f62a88cea7b6/chat_response.json)
+
+### Comparison
+
+| Feature                | `chat.json` (local)         | Extended JSON (gist)         |
+|------------------------|-----------------------------|------------------------------|
+| Rooms                  | Yes                         | Yes                          |
+| Participants           | Yes                         | Yes                          |
+| Message Types          | text, image, video, pdf     | text, image, video, pdf, ... |
+| Attachments            | Inline (in message object)  | May be separate/linked       |
+| Timestamps             | ISO 8601                    | ISO 8601                     |
+| Realistic Data Volume  | Small (demo)                | Larger, more realistic       |
+| API Structure          | Flat, simple                | Nested, closer to real API   |
+| Usage                  | UI demo, local dev          | Backend/API integration      |
+
+See the [extended JSON example](https://gist.githubusercontent.com/asharijuang/23745f3132fa30e666db68d2bf574e4a/raw/5d556dbb9c2aea9fdf3e1ec96e45f62a88cea7b6/chat_response.json) for a more complete API-style response.
+
+---
+
 ## System Overview
 
 This project is a **group chat system** that supports sending messages, including text, images, videos, and PDF files. It’s designed to be scalable and modular using a service-based architecture. Below is a breakdown of how it works:
@@ -150,3 +175,4 @@ file_size   -- in bytes
 - **Deployment:** Prepare for production and deploy (e.g., Vercel, Netlify)
 
 ---
+
